@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: HelloWorldSpringBoot
+server:
+  port: 8080
+messaggio : Ciao 

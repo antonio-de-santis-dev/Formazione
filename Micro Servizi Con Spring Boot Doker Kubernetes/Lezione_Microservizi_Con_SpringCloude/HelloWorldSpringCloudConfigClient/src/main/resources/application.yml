@@ -1,0 +1,17 @@
+
+server:
+  port: 5071
+ 
+spring:
+  application:
+    name: HelloWorldSpringCloudConfigClientApplication
+  cloud:
+    config:
+      uri: http://localhost:8888
+ 
+
+      
+      
+
+                
+      

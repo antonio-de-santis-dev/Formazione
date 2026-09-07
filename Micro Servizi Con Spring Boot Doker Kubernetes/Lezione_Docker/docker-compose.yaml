@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  docker-compose-springboot-helloworld:
+    image: programmingacademydotit/docker-springboot-helloworld-2:0.0.1-SNAPSHOT
+    mem_limit: 700m
+    ports:
+      - "8081:8081"
+    networks:
+      - prova-network
+
+networks:
+  prova-network:
