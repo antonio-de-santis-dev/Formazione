@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http - equiv="X-UA-Compatible" content="IE=edge">
+        <title> Istruzione Switch
+        </title>
+    </head>
+   
+
+   <p> Verifica la stagione<br>
+
+<input id="check" />
+<button onclick="checkStagione()">Stagione</button>
+</p>
+
+    <body>
+
+
+        
+
+        <script>
+ 
+
+// var mese = "dicembre";
+
+// switch (mese) {
+
+// case "gennaio":
+// document.write("Buon anno");
+// break;
+
+// case "giugno":
+// document.write("Tutti al mare");
+// break;
+
+// case "dicembre":
+// case "novembre":
+// document.write("Che freddo!");
+// break;
+
+// default: 
+// document.write("non ho nulla da comunicarti");
+
+//  }
+function checkStagione() {
+
+ var x = document.getElementById("check").value.toLowerCase();
+
+ switch(x) {
+
+case "estate" :
+alert("Tutti al mare");
+break;
+
+case "autunno" :
+alert("Tutti a vendemmiare");
+break;
+
+case "inverno" :
+alert("Tutti in montagna");
+break;
+    
+
+case "primavera" :
+alert("Tutti in campagna");
+break;
+
+default:
+alert("Mi dispiace, non ho capito!");
+}
+
+}
+
+
+
+
+        </script>
+    </body>
+</html>

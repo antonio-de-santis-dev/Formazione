@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototipo degli oggetti in JS</title>
+</head>
+<body>
+ <script>
+
+function crescita(mesi){
+    return(mesi);
+}
+
+function Fiore(stagione,colore,tipologia){
+
+this.fioreColore = colore;
+this.fioreStagione = stagione;
+this.fioreCaratteristica = tipologia;
+}
+
+
+Fiore.prototype.crescita = crescita;
+var rosa = new Fiore('primavera' , 'rossa' , 'rosa senza spine');
+
+// console.log(rosa.crescita('3'));
+
+document.write('La rosa cresce in ' + ' ' + rosa.crescita('3') + ' ' + 'mesi');
+
+
+
+
+ </script>
+    
+
+</body>
+</html>

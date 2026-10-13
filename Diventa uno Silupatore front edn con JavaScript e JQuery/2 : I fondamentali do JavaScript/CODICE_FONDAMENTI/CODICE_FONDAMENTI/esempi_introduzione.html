@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Esempi JavaScript</title>
+	<style>
+		h1{
+			text-align: center;
+		}
+
+		hr{
+			margin-bottom: 20px;
+		}
+	</style>
+
+	
+</head>
+
+<body>
+	
+<h1>Cosa posso fare con JavaScript?</h1>
+
+<p id="change">Posso cambiare il contenuto</p>
+
+<button type="button" onclick="document.getElementById('change').innerHTML = 'Sto imparando JS!'">Clicca</button>
+ 
+
+
+
+<hr>
+
+
+<p>Posso cambiare gli attributi</p>
+
+<button onclick="document.getElementById('immagine').src='immagini/qdr_rosso.jpg'">Scelgo il quadrato rosso</button>
+
+<img id="immagine" src="immagini/qdr_blue.jpg" style="width:100px">
+
+<button onclick="document.getElementById('immagine').src='immagini/qdr_verde.jpg'">Scelgo il quadrato verde</button>
+
+<hr>
+
+<p id="font">Posso cambiare lo stile</p>
+
+<button type="button" onclick="document.getElementById('font').style.fontSize='40px'">Font più grande?</button>
+
+<hr>
+
+<p id="nascosto">Posso nascondere un elemento</p>
+
+<button type="button" onclick="document.getElementById('nascosto').style.display='none'">Nascondi l'elemento</button>
+
+<hr>
+
+<p>Posso mostrare un elemento</p>
+
+<p id="mostra" style="display:none">Ecco il testo nascosto!</p>
+
+<button type="button" onclick="document.getElementById('mostra').style.display='block'">Mostrami altro testo</button>
+
+</body>
+</html>

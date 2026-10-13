@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Metodi chaining dei moduli</title>
+   
+    <script src='modulo.js'></script>
+</head>
+<body>
+ 
+ <script>
+
+
+//passare un parametro
+// document.write(corsa.km({massima: '20 km per ora'}));
+ 
+// document.write(corsa.km({massima: '50'}));
+document.write(corsa.tempiCorsa({massimoTempo: '10 ore'}) + '<br>' + corsa.km({massima: '50'}));
+
+ </script>
+    
+
+</body>
+</html>

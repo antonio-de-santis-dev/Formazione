@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http - equiv="X-UA-Compatible" content="IE=edge">
+        <title> Oggetto Date in JS
+        </title>
+    </head>
+    <body>
+
+<h1 id="mia_data"></h1>
+
+        <script>
+
+
+        // var mostraData = new Date();
+
+        // document.write(mostraData);
+
+// var data = new Date();
+
+// var giorno = data.getDate();
+// var giornoSet = data.getDay();
+// var mese = data.getMonth();
+// var anno = data.getFullYear();
+// var ora = data.getHours();
+// var minuti = data.getMinutes();
+// var secondi = data.getSeconds();
+
+
+// // document.write(anno);
+
+
+// document.write("Oggi è il " + giorno + " " + mese + " " + anno);
+
+
+var nomeMese = new Date();
+
+var mese = ["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"];
+
+// document.write("Mese corrente: " + mese[nomeMese.getMonth()]);
+
+var meseItalia = mese[nomeMese.getMonth()];
+
+var dataCorretta = new Date();
+
+var giorno = dataCorretta.getDate();
+var anno = dataCorretta.getFullYear();
+
+
+// document.write(giorno + " " +  meseItalia +" " + anno);
+
+
+var dataItalia = giorno + " " + meseItalia + " " + anno;
+
+
+// document.write("In Italia la data si scrive così: " + dataItalia);
+
+
+document.getElementById("mia_data").innerHTML = dataItalia;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </script>
+    </body>
+</html>

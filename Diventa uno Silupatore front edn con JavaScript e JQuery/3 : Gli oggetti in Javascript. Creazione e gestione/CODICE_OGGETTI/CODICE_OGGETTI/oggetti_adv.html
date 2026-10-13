@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestione degli oggetti in JS</title>
+</head>
+<body>
+ <script>
+// costruttore dell'oggetto
+// var Fiore = function(){
+
+//     var stagione , colore;
+// }
+
+// //istanze dell'oggetto
+// rosa = new Fiore;
+// rosa.stagione = 'primavera';
+
+// ciclamino = new Fiore;
+// ciclamino.colore = 'rosso';
+
+// console.log(rosa.stagione);
+// console.log(ciclamino.colore);
+
+
+// function Fiore(){
+// var stagione, colore, crescita;
+
+// this.colore = 'viola';
+
+// this.crescita = function(){
+
+//     console.log('cresce rapidamente');
+// }
+
+// }
+
+// rosa = new Fiore;
+// console.log(rosa.colore);
+
+// console.log(rosa.crescita());
+
+
+// creare propietà al volo
+
+function Fiore(stagione,colore,tipologia){
+
+this.fioreColore = colore;
+this.fioreStagione = stagione;
+this.fioreCaratteristica = tipologia;
+
+}
+
+var rosa = new Fiore('primavera' , 'rossa' , 'rosa senza spine');
+
+console.log(rosa.fioreColore);
+console.log(rosa.fioreCaratteristica);
+
+var ciclamino = new Fiore('autunno' , 'viola' , 'foglie verdi');
+console.log(ciclamino.fioreColore);
+
+ </script>
+    
+
+</body>
+</html>

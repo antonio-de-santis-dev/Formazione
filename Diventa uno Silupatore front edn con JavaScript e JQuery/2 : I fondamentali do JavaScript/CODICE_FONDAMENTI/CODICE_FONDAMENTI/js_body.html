@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>JavaScript nel body</title>
+		
+	</head>
+</head>
+<body>
+	<h1>Inserisco JavaScript nel body</h1>
+	<p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	
+	<button type="button" onclick="miaFunzione()">CLICCA QUI</button>
+	
+	<script>
+	
+	function miaFunzione() {
+	document.getElementById("demo").innerHTML = "Cambiamo il paragrafo";
+	}
+	</script>
+	
+</body>
+</html>
